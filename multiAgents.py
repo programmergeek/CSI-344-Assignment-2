@@ -151,7 +151,7 @@ numPrune = 0
 
 
 class AlphaBetaAgent(MultiAgentSearchAgent):
-    """        
+    """
         Your minimax agent with alpha-beta pruning (question 3)
     """
 
@@ -179,48 +179,70 @@ class AlphaBetaAgent(MultiAgentSearchAgent):
             return action, value
 
         def MIN_VALUE(state, depth, a, b):
+            # indicate numPrine and numStatesGenerated are global variables
+            global numPrune, numStatesGenerated
 
+            numStatesGenerated = numStatesGenerated + 1
             if TERMINAL(state, depth):
                 return self.evaluationFunction(state)
 
-            # YOUR CODE HERE
-            # Loop through all ghosts and all their possible actions here
-            # Descend down the tree and return b value; prune if necessary
-            successors = []
+            # create array to store all the possible actions the ghosts can make
+            ghost_successors = []
+
+            # add every possible action the ghosts can make to the array
             for ghost in GHOSTS:
                 for ghost_action in state.getLegalActions(ghost):
-                    successors += state.generateSuccessor(ghost, ghost_action)
+                    ghost_successors.append(
+                        state.generateSuccessor(ghost, ghost_action))
 
-            while successors:
-                b = min(b, MAX_VALUE(state, depth-1, a, b))
+            # find action that will give us the lowest possible value
+            while ghost_successors:
+                b = min(b, MAX_VALUE(ghost_successors[0], depth-1, a, b))
+
+                # prune actions that are unlikely to be chosen
                 if b <= a:
+                    numPrune = numPrune + 1
                     return a
-                successors = successors[1:]
+                ghost_successors = ghost_successors[1:]
+
             return b
 
         def MAX_VALUE(state, depth, a, b):
+            # indicate numPrine and numStatesGenerated are global variables
+            global numPrune, numStatesGenerated
 
+            numStatesGenerated = numStatesGenerated + 1
             if TERMINAL(state, depth):
                 return self.evaluationFunction(state)
 
-            # YOUR CODE HERE
-            # Loop through all possible actions of pacman here
-            # Descend down the tree and return a value; prune if necessary
+            # filter the list of actions that pacman can take to avoid the STOP action
             actions_pacman = filter(lambda a: a != Directions.STOP,
                                     state.getLegalActions(PACMAN))
-            pacman_successors = [(action, MIN_VALUE(state.generateSuccessor(
-                PACMAN, action), depth, a, b)) for action in actions_pacman]
 
+            # create array to store the possible moves pacman can make
+            pacman_successors = []
+
+            # add every possible action pacman can make to the array
+            for action_pacman in actions_pacman:
+                pacman_successors.append(
+                    state.generateSuccessor(PACMAN, action_pacman))
+
+            # find the action that gives us the largest possible value
             while pacman_successors:
-                a = max(a, MAX_VALUE(state, depth-1, a, b))
-                if a <= b:
+                a = max(a, MIN_VALUE(pacman_successors[0], depth-1, a, b))
+
+                # prune actions that are unlikely to be taken
+                if a >= b:
+                    numPrune = numPrune + 1
                     return b
-                successors_max = successors_max[1:]
+                pacman_successors = pacman_successors[1:]
             return a
 
         action, value = A_B_SEARCH(gameState, self.depth)
 
         # YOUR CODE HERE: print required output here
+        print "Number of State Generated: ", numStatesGenerated
+        print "Number of prunings ", numPrune
 
         return action
 
