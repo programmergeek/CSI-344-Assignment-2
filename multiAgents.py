@@ -244,6 +244,16 @@ class AlphaBetaAgent(MultiAgentSearchAgent):
         print "Number of State Generated: ", numStatesGenerated
         print "Number of prunings ", numPrune
 
+        # will output and append results to a new external file
+        output = open('partAoutput.txt', 'a')
+        # converts variables to strings
+        stateGenerated = repr(numStatesGenerated)
+        pruns = repr(numPrune)
+        # writes to external file
+        output.write("Number of State Generated: " + stateGenerated + "\n")
+        output.write("Number of prunings: " + pruns + "\n")
+        output.close()
+
         return action
 
 
