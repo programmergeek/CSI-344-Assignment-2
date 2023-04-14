@@ -12,10 +12,10 @@
 # Pieter Abbeel (pabbeel@cs.berkeley.edu).
 
 """
-student id: 202005881
-surname: Joseph
-initials: TWJ
-programme code: BSc Computer Science
+Ditlhotlhole, K.J.D 202002023 BSc Computer Science 
+Dibotelo, T.T.D 202001882  BSc Computer Science 
+Joseph, T.W.J 202005881 BSc Computer Science 
+Mholo, Z.M 202005555 BSc Computer Science 
 """
 
 from util import manhattanDistance
