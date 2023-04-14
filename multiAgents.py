@@ -202,7 +202,7 @@ class AlphaBetaAgent(MultiAgentSearchAgent):
                 # prune actions that are unlikely to be chosen
                 if b <= a:
                     numPrune = numPrune + 1
-                    return a
+                    return b
                 ghost_successors = ghost_successors[1:]
 
             return b
@@ -234,7 +234,7 @@ class AlphaBetaAgent(MultiAgentSearchAgent):
                 # prune actions that are unlikely to be taken
                 if a >= b:
                     numPrune = numPrune + 1
-                    return b
+                    return a
                 pacman_successors = pacman_successors[1:]
             return a
 
