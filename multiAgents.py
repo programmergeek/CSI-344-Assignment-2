@@ -193,7 +193,7 @@ class AlphaBetaAgent(MultiAgentSearchAgent):
             for ghost in GHOSTS:
                 for ghost_action in state.getLegalActions(ghost):
                     ghost_successors.append(
-                        (state.generateSuccessor(ghost, ghost_action), ghost_action, self.evaluationFunction(state)))
+                        (state.generateSuccessor(ghost, ghost_action), ghost_action, self.evaluationFunction(state.generateSuccessor(ghost, ghost_action))))
 
             # order all the possible actions the ghosts can take in ascending order
             ghost_successors.sort(reverse=False, key=lambda a: a[2])
@@ -228,7 +228,7 @@ class AlphaBetaAgent(MultiAgentSearchAgent):
             # add every possible action pacman can make to the array
             for action_pacman in actions_pacman:
                 pacman_successors.append(
-                    (state.generateSuccessor(PACMAN, action_pacman), action_pacman, self.evaluationFunction(state)))
+                    (state.generateSuccessor(PACMAN, action_pacman), action_pacman, self.evaluationFunction(state.generateSuccessor(PACMAN, action_pacman))))
 
             # order all the possible actions pacman can take in descending order based on score
             pacman_successors.sort(reverse=True, key= lambda a: a[2])
