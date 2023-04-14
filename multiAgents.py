@@ -193,11 +193,14 @@ class AlphaBetaAgent(MultiAgentSearchAgent):
             for ghost in GHOSTS:
                 for ghost_action in state.getLegalActions(ghost):
                     ghost_successors.append(
-                        state.generateSuccessor(ghost, ghost_action))
+                        (state.generateSuccessor(ghost, ghost_action), ghost_action, self.evaluationFunction(state)))
+
+            # order all the possible actions the ghosts can take in ascending order
+            ghost_successors.sort(reverse=False, key=lambda a: a[2])
 
             # find action that will give us the lowest possible value
             while ghost_successors:
-                b = min(b, MAX_VALUE(ghost_successors[0], depth-1, a, b))
+                b = min(b, MAX_VALUE(ghost_successors[0][0], depth-1, a, b))
 
                 # prune actions that are unlikely to be chosen
                 if b <= a:
@@ -225,11 +228,14 @@ class AlphaBetaAgent(MultiAgentSearchAgent):
             # add every possible action pacman can make to the array
             for action_pacman in actions_pacman:
                 pacman_successors.append(
-                    state.generateSuccessor(PACMAN, action_pacman))
+                    (state.generateSuccessor(PACMAN, action_pacman), action_pacman, self.evaluationFunction(state)))
+
+            # order all the possible actions pacman can take in descending order based on score
+            pacman_successors.sort(reverse=True, key= lambda a: a[2])
 
             # find the action that gives us the largest possible value
             while pacman_successors:
-                a = max(a, MIN_VALUE(pacman_successors[0], depth-1, a, b))
+                a = max(a, MIN_VALUE(pacman_successors[0][0], depth-1, a, b))
 
                 # prune actions that are unlikely to be taken
                 if a >= b:
