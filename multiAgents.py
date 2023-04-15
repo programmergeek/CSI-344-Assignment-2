@@ -245,7 +245,7 @@ class AlphaBetaAgent(MultiAgentSearchAgent):
         print "Number of prunings ", numPrune
 
         # will output and append results to a new external file
-        output = open('partAoutput.txt', 'a')
+        output = open('outputB.txt', 'a')
         # converts variables to strings
         stateGenerated = repr(numStatesGenerated)
         pruns = repr(numPrune)
