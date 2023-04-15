@@ -1,0 +1,289 @@
+Number of State Generated:  61
+Number of prunings  17
+Number of State Generated:  205
+Number of prunings  66
+Number of State Generated:  297
+Number of prunings  103
+Number of State Generated:  392
+Number of prunings  136
+Number of State Generated:  460
+Number of prunings  160
+Number of State Generated:  563
+Number of prunings  193
+Number of State Generated:  663
+Number of prunings  223
+Number of State Generated:  750
+Number of prunings  253
+Number of State Generated:  842
+Number of prunings  285
+Number of State Generated:  898
+Number of prunings  302
+Number of State Generated:  982
+Number of prunings  336
+Number of State Generated:  1050
+Number of prunings  358
+Number of State Generated:  1131
+Number of prunings  382
+Number of State Generated:  1220
+Number of prunings  406
+Number of State Generated:  1342
+Number of prunings  439
+Number of State Generated:  1509
+Number of prunings  479
+Number of State Generated:  1695
+Number of prunings  523
+Number of State Generated:  1809
+Number of prunings  554
+Number of State Generated:  1940
+Number of prunings  586
+Number of State Generated:  2133
+Number of prunings  636
+Number of State Generated:  2329
+Number of prunings  694
+Number of State Generated:  2432
+Number of prunings  731
+Number of State Generated:  2474
+Number of prunings  743
+Number of State Generated:  2708
+Number of prunings  806
+Number of State Generated:  2774
+Number of prunings  827
+Number of State Generated:  2996
+Number of prunings  886
+Number of State Generated:  3034
+Number of prunings  896
+Number of State Generated:  3182
+Number of prunings  932
+Number of State Generated:  3244
+Number of prunings  951
+Number of State Generated:  3464
+Number of prunings  1011
+Number of State Generated:  3506
+Number of prunings  1023
+Number of State Generated:  3725
+Number of prunings  1082
+Number of State Generated:  3785
+Number of prunings  1101
+Number of State Generated:  3878
+Number of prunings  1131
+Number of State Generated:  3946
+Number of prunings  1155
+Number of State Generated:  4030
+Number of prunings  1182
+Number of State Generated:  4054
+Number of prunings  1189
+Number of State Generated:  4138
+Number of prunings  1216
+Number of State Generated:  4162
+Number of prunings  1223
+Number of State Generated:  4246
+Number of prunings  1250
+Number of State Generated:  4270
+Number of prunings  1257
+Number of State Generated:  4354
+Number of prunings  1284
+Number of State Generated:  4378
+Number of prunings  1291
+Number of State Generated:  4464
+Number of prunings  1320
+Number of State Generated:  4501
+Number of prunings  1332
+Number of State Generated:  4591
+Number of prunings  1362
+Number of State Generated:  4623
+Number of prunings  1373
+Number of State Generated:  4707
+Number of prunings  1400
+Number of State Generated:  4731
+Number of prunings  1407
+Number of State Generated:  4815
+Number of prunings  1434
+Number of State Generated:  4839
+Number of prunings  1441
+Number of State Generated:  4923
+Number of prunings  1468
+Number of State Generated:  4949
+Number of prunings  1476
+Number of State Generated:  5069
+Number of prunings  1521
+Number of State Generated:  5095
+Number of prunings  1529
+Number of State Generated:  5215
+Number of prunings  1574
+Number of State Generated:  5239
+Number of prunings  1581
+Number of State Generated:  5323
+Number of prunings  1608
+Number of State Generated:  5347
+Number of prunings  1615
+Number of State Generated:  5431
+Number of prunings  1642
+Number of State Generated:  5455
+Number of prunings  1649
+Number of State Generated:  5545
+Number of prunings  1679
+Number of State Generated:  5579
+Number of prunings  1691
+Number of State Generated:  5675
+Number of prunings  1724
+Number of State Generated:  5709
+Number of prunings  1736
+Number of State Generated:  5847
+Number of prunings  1790
+Number of State Generated:  5881
+Number of prunings  1802
+Number of State Generated:  5983
+Number of prunings  1838
+Number of State Generated:  6029
+Number of prunings  1856
+Number of State Generated:  6125
+Number of prunings  1889
+Number of State Generated:  6161
+Number of prunings  1902
+Number of State Generated:  6299
+Number of prunings  1956
+Number of State Generated:  6331
+Number of prunings  1967
+Number of State Generated:  6391
+Number of prunings  1982
+Number of State Generated:  6413
+Number of prunings  1988
+Number of State Generated:  6473
+Number of prunings  2003
+Number of State Generated:  6495
+Number of prunings  2009
+Number of State Generated:  6555
+Number of prunings  2024
+Number of State Generated:  6577
+Number of prunings  2030
+Number of State Generated:  6637
+Number of prunings  2045
+Number of State Generated:  6661
+Number of prunings  2052
+Number of State Generated:  6751
+Number of prunings  2082
+Number of State Generated:  6783
+Number of prunings  2093
+Number of State Generated:  6873
+Number of prunings  2123
+Number of State Generated:  6905
+Number of prunings  2134
+Number of State Generated:  6995
+Number of prunings  2164
+Number of State Generated:  7027
+Number of prunings  2175
+Number of State Generated:  7123
+Number of prunings  2208
+Number of State Generated:  7157
+Number of prunings  2220
+Number of State Generated:  7247
+Number of prunings  2250
+Number of State Generated:  7281
+Number of prunings  2262
+Number of State Generated:  7371
+Number of prunings  2292
+Number of State Generated:  7407
+Number of prunings  2305
+Number of State Generated:  7515
+Number of prunings  2343
+Number of State Generated:  7614
+Number of prunings  2364
+Number of State Generated:  7803
+Number of prunings  2424
+Number of State Generated:  7918
+Number of prunings  2447
+Number of State Generated:  8080
+Number of prunings  2488
+Number of State Generated:  8144
+Number of prunings  2503
+Number of State Generated:  8237
+Number of prunings  2525
+Number of State Generated:  8348
+Number of prunings  2549
+Number of State Generated:  8535
+Number of prunings  2595
+Number of State Generated:  8650
+Number of prunings  2624
+Number of State Generated:  8766
+Number of prunings  2657
+Number of State Generated:  8916
+Number of prunings  2696
+Number of State Generated:  9114
+Number of prunings  2746
+Number of State Generated:  9436
+Number of prunings  2839
+Number of State Generated:  9756
+Number of prunings  2935
+Number of State Generated:  10040
+Number of prunings  3009
+Number of State Generated:  10134
+Number of prunings  3037
+Number of State Generated:  10264
+Number of prunings  3080
+Number of State Generated:  10332
+Number of prunings  3096
+Number of State Generated:  10438
+Number of prunings  3124
+Number of State Generated:  10546
+Number of prunings  3156
+Number of State Generated:  10627
+Number of prunings  3180
+Number of State Generated:  10695
+Number of prunings  3201
+Number of State Generated:  10736
+Number of prunings  3213
+Number of State Generated:  10792
+Number of prunings  3232
+Number of State Generated:  10857
+Number of prunings  3250
+Number of State Generated:  10972
+Number of prunings  3284
+Number of State Generated:  11063
+Number of prunings  3310
+Number of State Generated:  11163
+Number of prunings  3343
+Number of State Generated:  11274
+Number of prunings  3376
+Number of State Generated:  11410
+Number of prunings  3424
+Number of State Generated:  11560
+Number of prunings  3479
+Number of State Generated:  11584
+Number of prunings  3486
+Number of State Generated:  11692
+Number of prunings  3514
+Number of State Generated:  11795
+Number of prunings  3538
+Number of State Generated:  11908
+Number of prunings  3565
+Number of State Generated:  12028
+Number of prunings  3603
+Number of State Generated:  12197
+Number of prunings  3651
+Number of State Generated:  12331
+Number of prunings  3693
+Number of State Generated:  12502
+Number of prunings  3732
+Number of State Generated:  12555
+Number of prunings  3748
+Number of State Generated:  12713
+Number of prunings  3804
+Number of State Generated:  12777
+Number of prunings  3827
+Number of State Generated:  12834
+Number of prunings  3847
+Number of State Generated:  12898
+Number of prunings  3871
+Number of State Generated:  12978
+Number of prunings  3903
+Number of State Generated:  13055
+Number of prunings  3925
+Number of State Generated:  13120
+Number of prunings  3943
+Number of State Generated:  13190
+Number of prunings  3958
+Pacman emerges victorious! Score: 1508
+Average Score: 1508.0
+Scores:        1508.0
+Win Rate:      1/1 (1.00)
+Record:        Win
