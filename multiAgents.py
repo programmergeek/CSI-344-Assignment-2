@@ -292,3 +292,14 @@ def betterEvaluationFunction(currentGameState):
 
 # Abbreviation
 better = betterEvaluationFunction
+
+""" 
+PART 3 - Comparison
+
+i
+
+ii
+
+iii
+
+"""
